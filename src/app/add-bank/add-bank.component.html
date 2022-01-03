@@ -1,0 +1,29 @@
+
+<form [formGroup]="angForm">
+    <div class="form-group">
+      bName : <input type="text" formControlName="bname"></div>
+      <!-- <div *ngIf="angForm.controls['name'].errors && angForm.controls['name'].invalid && (angForm.controls['name'].dirty || angForm.controls['name'].touched)">
+        <div *ngIf="angForm.controls['name'].errors.required">
+          Book Name Is Required
+        </div>
+      </div> -->
+  
+      <div class="form-group">
+     head : <input type="text" formControlName="head"></div>
+     <!-- <div *ngIf="angForm.controls['subject'].errors && angForm.controls['subject'].invalid && (angForm.controls['subject'].dirty || angForm.controls['subject'].touched)">
+        <div *ngIf="angForm.controls['subject'].errors.required">
+          Book price Is Required
+        </div>
+      </div> -->
+      <div class="form-group">
+     address : <input type="text" formControlName="address"></div>
+      <!-- <div *ngIf="angForm.controls['marks'].errors && angForm.controls['marks'].invalid && (angForm.controls['marks'].dirty || angForm.controls['marks'].touched)">
+        <div *ngIf="angForm.controls['marks'].errors.required">
+          Book price Is Required
+        </div>
+      </div> -->
+     
+
+       <button type="button" (click)="addbank(angForm.controls['bname'].value,angForm.controls['head'].value,angForm.controls['address'].value)">Submit</button>
+   
+  </form>

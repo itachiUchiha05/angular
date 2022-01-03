@@ -1,0 +1,15 @@
+<table>
+    <tr>
+        <td>bName</td>
+        <td>head</td>
+        <td>address</td>
+
+    </tr>
+
+    <tr *ngFor ="let bank of banks">
+        <td>{{bank.bname}}</td>
+        <td>{{bank.head}}</td>
+        <td>{{bank.address}}</td>
+        <td><a routerLink="bank" (click)="deletebank(bank._id)">Delete</a></td>
+    </tr>
+    </table>

@@ -1,0 +1,16 @@
+
+      <form [formGroup]="angForm" novalidate>
+        <div class="form-group">
+          bName : <input type="text"formControlName="bname" #bname [(ngModel)]="bank.bname">
+        </div>
+        
+  
+        <!-- <div class="form-group">
+         Price : <input type="Number"formControlName="price" #salary [(ngModel)]="bank.head">
+        </div> -->
+       
+        <div class="form-group">
+           <button type="button" (click)="editbank(bank._id,angForm.controls['bname'].value)">Submit</button>
+         </div>
+      </form>
+    
